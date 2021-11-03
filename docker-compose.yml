@@ -1,0 +1,11 @@
+version: 3
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_USER: postgres
+      POSTGRES_DB: greddit
+#      POSTGRES_INITDB_WALDIR: path for transaction logs
+#    volumes:
+#      - "./initdb.d:/docker-entrypoint-initdb.d" # Mount this path with schema script, etc.
